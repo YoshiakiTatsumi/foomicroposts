@@ -21,6 +21,18 @@ module Microposts
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.active_record.raise_in_transactional_callbacks = true
+
+#Techacademy setting 　28までコメントアウト、31から追加
+    # config.active_record.raise_in_transactional_callbacks = true
+  # end
+# end
+
+
+    config.generators do |g|
+      g.stylesheets false
+      g.javascripts false
+      g.helper false
+      g.test_framework false
+    end
   end
 end
