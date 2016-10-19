@@ -26,6 +26,7 @@ module Microposts
     # config.active_record.raise_in_transactional_callbacks = true
   # end
 # end
+    config.action_view.embed_authenticity_token_in_remote_forms = true
 
 
     config.generators do |g|
