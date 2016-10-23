@@ -1,0 +1,46 @@
+<section class="user_info">
+  <h1>
+    <%= gravatar_for @user %>
+    <%= @user.name %>
+  </h1>
+</section>
+
+<a><%= link_to "user_page", user_path(@user) %> | 
+<%= link_to "followers", followers_user_path(@user) %> | 
+<%= link_to "followings", followings_user_path(@user) %>
+</a>
+
+<!--         Prefix Verb   URI Pattern                     Controller#Action-->
+<!--           root GET    /                               static_pages#home-->
+<!--         signup GET    /signup(.:format)               users#new-->
+<!--          login GET    /login(.:format)                sessions#new-->
+<!--                POST   /login(.:format)                sessions#create-->
+<!--         logout DELETE /logout(.:format)               sessions#destroy-->
+<!--          users GET    /users(.:format)                users#index-->
+<!--                POST   /users(.:format)                users#create-->
+<!--       new_user GET    /users/new(.:format)            users#new-->
+<!--      edit_user GET    /users/:id/edit(.:format)       users#edit-->
+<!--           user GET    /users/:id(.:format)            users#show-->
+<!--                PATCH  /users/:id(.:format)            users#update-->
+<!--                PUT    /users/:id(.:format)            users#update-->
+<!--                DELETE /users/:id(.:format)            users#destroy-->
+<!--     microposts GET    /microposts(.:format)           microposts#index-->
+<!--                POST   /microposts(.:format)           microposts#create-->
+<!--  new_micropost GET    /microposts/new(.:format)       microposts#new-->
+<!-- edit_micropost GET    /microposts/:id/edit(.:format)  microposts#edit-->
+<!--      micropost GET    /microposts/:id(.:format)       microposts#show-->
+<!--                PATCH  /microposts/:id(.:format)       microposts#update-->
+<!--                PUT    /microposts/:id(.:format)       microposts#update-->
+<!--                DELETE /microposts/:id(.:format)       microposts#destroy-->
+<!--  relationships POST   /relationships(.:format)        relationships#create-->
+<!--   relationship DELETE /relationships/:id(.:format)    relationships#destroy-->
+<!--followings_user GET    /users/:id/followings(.:format) users#followings-->
+<!-- followers_user GET    /users/:id/followers(.:format)  users#followers-->
+<!--                GET    /users(.:format)                users#index-->
+<!--                POST   /users(.:format)                users#create-->
+<!--                GET    /users/new(.:format)            users#new-->
+<!--                GET    /users/:id/edit(.:format)       users#edit-->
+<!--                GET    /users/:id(.:format)            users#show-->
+<!--                PATCH  /users/:id(.:format)            users#update-->
+<!--                PUT    /users/:id(.:format)            users#update-->
+<!--                DELETE /users/:id(.:format)            users#destroy-->
